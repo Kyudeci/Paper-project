@@ -9,27 +9,34 @@
   75% {transform: rotateY(-67deg);}
   100% {transform: rotateY(-90deg);}
 } */
-.door1 {
+#door1 {
   background-color: skyblue;
   height: 300px;
-  position:fixed;
+  position: absolute;
   width: 49%;
   text-align: right;
-  animation:shuffle 3s;
+  animation:shuffle 3s forwards;
   transform-origin: left;
-  float: right;
-  display: flex;
   border-style: solid;
+  z-index: 2;
+  display: inline-block;
 }
-.door2 {
+#door2 {
   background-color: skyblue;
   height: 300px;
-  position: relative;
+  position: absolute;
   width: 49%;
-  text-align: right;
-  animation:shuffle 3s ;
+  text-align: left;
+  animation:shuffle 3s forwards;
   transform-origin: right;
-  float: right;
-  display: flex;
   border-style: solid;
+  z-index: 2;
+  display: inline-block;
+  right: 0
+}
+#reveal {
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  clear: both;
 }
