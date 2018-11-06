@@ -1,0 +1,35 @@
+@keyframes shuffle {
+  0% {transform: rotateY(0deg);}
+  50% {transform: rotateY(-45deg);}
+  100% {transform: rotateY(-90deg);}
+}
+/* @keyframes shuffle2 {
+  0% {transform: rotateY(0deg);}
+  50% {transform: rotateY(-45deg);}
+  75% {transform: rotateY(-67deg);}
+  100% {transform: rotateY(-90deg);}
+} */
+.door1 {
+  background-color: skyblue;
+  height: 300px;
+  position:fixed;
+  width: 49%;
+  text-align: right;
+  animation:shuffle 3s;
+  transform-origin: left;
+  float: right;
+  display: flex;
+  border-style: solid;
+}
+.door2 {
+  background-color: skyblue;
+  height: 300px;
+  position: relative;
+  width: 49%;
+  text-align: right;
+  animation:shuffle 3s ;
+  transform-origin: right;
+  float: right;
+  display: flex;
+  border-style: solid;
+}
