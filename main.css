@@ -1,3 +1,6 @@
+#head {
+    border-style: solid;
+}
 @keyframes shuffle {
   0% {transform: rotateY(0deg);}
   50% {transform: rotateY(-45deg);}
@@ -10,13 +13,13 @@
   100% {transform: rotateY(-90deg);}
 } */
 #door1 {
-  background-color: skyblue;
+  background-image: url(woodtext.jpg);
   height: 200px;
   position: absolute;
   width: 50%;
   text-align: center;
   animation:shuffle 3s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
   transform-origin: left;
   border-style: solid;
   z-index: 2;
@@ -24,13 +27,13 @@
   left: 0;
 }
 #door2 {
-  background-color: skyblue;
+  background-image: url(woodtext.jpg);
   height: 200px;
   position: absolute;
   width: 50%;
   text-align: center;
   animation:shuffle 3s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
   transform-origin: right;
   border-style: solid;
   z-index: 2;
@@ -42,6 +45,15 @@
   font-size: 72px;
   font-weight: bold;
   clear: both;
+}
+div#reveal {
+  background-image: url(sparkles.gif);
+  background-color: tomato;
+}
+#andmore {
+  height: 200px;
+  margin-top: 0px;
+  line-height: 200px;
 }
 #s1 {
   display: inline-block;
@@ -55,4 +67,29 @@ img {
 }
 #s2 {
   text-align: center;
+  background-color: #954520;
+}
+.s3 {
+  display: inline-block;
+  opacity: 0;
+  margin-right: 50px;
+}
+.s4 {
+  display: inline-block;
+  opacity: 0;
+  margin-right: 50px;
+}
+.s5 {
+  display: inline-block;
+  opacity: 0;
+  margin-right: 50px;
+  animation-delay:
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation: fadeIn 3s forwards;
 }
