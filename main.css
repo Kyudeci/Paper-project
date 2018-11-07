@@ -13,7 +13,7 @@
   background-color: skyblue;
   height: 200px;
   position: absolute;
-  width: 49%;
+  width: 50%;
   text-align: center;
   animation:shuffle 3s forwards;
   animation-delay: 4s;
@@ -21,12 +21,13 @@
   border-style: solid;
   z-index: 2;
   display: inline-block;
+  left: 0;
 }
 #door2 {
   background-color: skyblue;
   height: 200px;
   position: absolute;
-  width: 49%;
+  width: 50%;
   text-align: center;
   animation:shuffle 3s forwards;
   animation-delay: 4s;
@@ -44,4 +45,14 @@
 }
 #s1 {
   display: inline-block;
+  padding-top: 50px;
+  position: relative;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+#s2 {
+  text-align: center;
 }
